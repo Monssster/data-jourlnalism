@@ -1,0 +1,815 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# # 第一节：The Interactive Interpreter
+# ***
+
+# In[8]:
+
+
+print("Hello,world!")#代码1
+
+
+# In[9]:
+
+
+The Spanish Iquisition#代码2:错误的代码语言测试
+
+
+# # 第二节：Alogrithm（无代码）
+# ***
+
+# # 第三节：Numbers and Expressions
+# ***
+# ## 加法运算
+
+# In[10]:
+
+
+2+2#代码3
+
+
+# In[11]:
+
+
+53672+235253#代码4
+
+
+# ## 除法运算
+
+# In[12]:
+
+
+1/2#代码5
+
+
+# In[13]:
+
+
+1/1#代码6
+
+
+# ### *取整除法运算*
+
+# In[14]:
+
+
+1//2#代码7
+
+
+# In[15]:
+
+
+1//1#代码8
+
+
+# In[16]:
+
+
+5.0//2.4#代码9
+
+
+# #### 可用于设置间隔，触发规律性动作
+
+# ## *扩展：减法与乘法尝试*
+
+# In[18]:
+
+
+5-3#减法1
+
+
+# In[19]:
+
+
+258-121#减法2
+
+
+# In[20]:
+
+
+3*5#乘法1
+
+
+# In[21]:
+
+
+283*163#乘法2
+
+
+# ## 余数计算：x%y=x-（（x//y）*y）
+
+# In[22]:
+
+
+1%2#代码10
+
+
+# In[23]:
+
+
+10//3#代码11：取整结果
+
+
+# In[24]:
+
+
+10%3#代码12：对应余数
+
+
+# In[25]:
+
+
+9//3#代码13：取整结果
+
+
+# In[26]:
+
+
+9%3#代码14：对应余数
+
+
+# In[27]:
+
+
+2.75%0.5#代码15：本身就有小数的余数与被计算数字的小数点数量一致
+
+
+# ### *当负数参与除法：向下取整*
+
+# In[28]:
+
+
+10%3#代码16
+
+
+# In[29]:
+
+
+10%-3#代码17：向下而非向0取整
+
+
+# In[30]:
+
+
+-10%3#代码18：套用余数计算公式可得2
+
+
+# In[31]:
+
+
+-10%-3#代码19
+
+
+# In[32]:
+
+
+10//3#代码20
+
+
+# In[33]:
+
+
+10//-3#代码21：向下而非向0取整
+
+
+# In[34]:
+
+
+-10//3#代码22：向下而非向0取整
+
+
+# In[35]:
+
+
+-10//-3#代码23
+
+
+# ## 次方运算
+
+# In[36]:
+
+
+2**3#代码24
+
+
+# In[37]:
+
+
+-3**2#代码25：不加括号，则负号不参与次方运算
+
+
+# In[38]:
+
+
+(-3)**2#代码26：加上括号，则负号参与次方运算
+
+
+# ## Hexadecimals Octals and Binary 十六/八/二进制
+
+# In[39]:
+
+
+0xAF#代码27：0x表示十六进制
+
+
+# In[43]:
+
+
+0o10#代码28：0o表示八进制，与教材版本不同
+
+
+# In[44]:
+
+
+0b1011010010#代码29:0b表示二进制
+
+
+# # 第四节：Vairables
+# ***
+
+# In[45]:
+
+
+x=3#代码30:赋值
+
+
+# In[46]:
+
+
+x*2#代码31:计算
+
+
+# # 第五节：Staements 不同意涵的代码形式
+# ***
+
+# In[47]:
+
+
+2*2#代码32:assignments
+
+
+# In[48]:
+
+
+print(2*2)#代码33:print statement
+
+
+# #### assignments改变代码运算过程中的数值和过程等，print statement改变屏幕上最终呈现出的内容
+
+# # 第六节：Getting Input From the Users
+# ***
+
+# In[49]:
+
+
+input("The meaning of life:")#代码34:请求输入
+
+
+# In[50]:
+
+
+x=input("x:")#代码35:请用户给x赋值
+
+
+# In[51]:
+
+
+y=input("y:")#代码36:请用户给y赋值
+
+
+# In[53]:
+
+
+print(int(x)*int(y))#代码37:运用赋值进行计算并输出结果
+
+
+# ### *The IF Statement*
+
+# In[55]:
+
+
+if 1==2:print("One equals two")#代码38:不符合的条件
+
+
+# In[56]:
+
+
+if 1==1:print("One equals one")#代码39:符合的条件
+
+
+# #### 可用于设置特定条件下自动显示的内容
+
+# # 第七节：Function 自带的运算公式
+# ***
+
+# In[57]:
+
+
+2**3#代码40:次方运算符号
+
+
+# In[58]:
+
+
+pow(2,3)#代码41:次方运算公式
+
+
+# In[59]:
+
+
+10+pow(2,3*5)/3.0#代码42:使用公式后运用到更加复杂的计算当中
+
+
+# In[60]:
+
+
+abs(-10)#代码43:取绝对值公式
+
+
+# In[61]:
+
+
+2//3#代码44:取整除法运算符号
+
+
+# In[62]:
+
+
+round(2/3)#代码45:取整除法运算公式
+
+
+# # 第八节：Modules 导入公式组
+# ***
+
+# In[63]:
+
+
+import math #代码46:导入math公式组
+
+
+# In[64]:
+
+
+math.floor(32.9)#代码47:使用math公式组内的floor公式-向下取整
+
+
+# In[66]:
+
+
+int(32.9)#代码48：取整算法
+
+
+# In[67]:
+
+
+math.ceil(32.9)#代码49:使用math公式组内的ceil公式-向上取整
+
+
+# In[68]:
+
+
+math.ceil(32)#代码50
+
+
+# In[69]:
+
+
+from math import sqrt#代码51:单独导入一个公式
+
+
+# In[70]:
+
+
+sqrt(9)#代码52:使用这个开方公式
+
+
+# ### *Cmath and Complex Numbers*
+
+# In[71]:
+
+
+from math import sqrt#代码53
+
+
+# In[72]:
+
+
+sqrt(-1)#代码54:错误示范
+
+
+# In[73]:
+
+
+import cmath#代码55:导入函数库
+
+
+# In[74]:
+
+
+cmath.sqrt(-1)#代码56：包括虚数的开方计算
+
+
+# In[75]:
+
+
+(1+3j)*(9+4j)#代码57:复杂的虚数计算
+
+
+# # 第九节：Saving and Executing Your Programs 
+# ### （在jupyter notebook里面好像不需要了？）
+# ***
+
+# In[3]:
+
+
+name=input("What is your name?")
+print("Hello， "+name+"!")#代码58:互动式开场
+
+
+# ## *Turtle Module*
+
+# In[1]:
+
+
+from turtle import*#代码59:启动turtle module
+
+
+# In[2]:
+
+
+forward(100)
+left(120)
+forward(100)
+left(120)
+forward(100)#代码60:路径指令
+
+
+# In[3]:
+
+
+penup()#代码61:提笔，准备移动起始位置
+
+
+# In[5]:
+
+
+forward(100)
+left(120)
+forward(100)#代码62:移动笔的位置的路径
+
+
+# In[6]:
+
+
+pendown()#代码63:落笔准备画
+
+
+# In[7]:
+
+
+forward(100)
+left(120)
+forward(100)
+left(120)
+forward(100)#代码64:绘制路径
+
+
+# # 第十节：Double Clicking（Comments功能全程使用中）
+# ***
+
+# In[15]:
+
+
+name=input("What is your name?")
+print("Hello， "+name+"!")
+input("Press <enter>")#代码65:进入
+
+
+# # 第十一节：Strings
+# ***
+
+# In[17]:
+
+
+print("Hello,world!")#代码67：最开始的代码
+
+
+# ## 单双引号
+
+# In[18]:
+
+
+"Hello, world!"#代码68:双引号输入-单引号输出
+
+
+# In[19]:
+
+
+'Hello,world!'#代码69:单引号输入-单引号输出
+
+
+# In[20]:
+
+
+"Let's go!"#代码70:双引号输入-双引号输出
+
+
+# In[21]:
+
+
+'Let's go!'#代码71：错误示范
+
+
+# In[23]:
+
+
+'Let\'s go!'#代码72:正确方法-添加\
+
+
+# In[24]:
+
+
+"\"Hello,world!\"she said"#代码73:扩展使用方法
+
+
+# ## Concatenating Strings
+
+# In[25]:
+
+
+"Let's say " '"Hello, world!"'#代码74:新的string类型
+
+
+# In[26]:
+
+
+x = "Hello, "
+y = "world!"
+x y#代码75:错误示范
+
+
+# In[28]:
+
+
+"Hello, " + "world!"#代码76
+
+
+# In[29]:
+
+
+x = "Hello, "
+y = "world!"
+x + y#代码77:正确方法-带上+号
+
+
+# ## String Representations, str and repr
+
+# In[30]:
+
+
+"Hello, world!"#代码78:直接输出
+
+
+# In[31]:
+
+
+print("Hello, world!")#代码79:print输出
+
+
+# In[32]:
+
+
+"Hello,\nworld!"#代码79:错误的分行指令
+
+
+# In[33]:
+
+
+print("Hello,\nworld!")#代码80:正确的分行指令
+
+
+# In[34]:
+
+
+print(repr("Hello,\nworld!"))#代码81:repr
+
+
+# In[35]:
+
+
+print(str("Hello,\nworld!"))#代码82:str
+
+
+# ## Long Strings
+
+# In[36]:
+
+
+print('''This is a very long string. It continues here.
+And it's not over yet. "Hello, world!"
+Still here.''')#代码83:使用三个引号输入长字符
+
+
+# In[41]:
+
+
+1 + 2 + 4 + 5#代码84
+
+
+# In[42]:
+
+
+print ('Hello, world')#代码85
+
+
+# ## Raw Strings
+
+# In[43]:
+
+
+print('Hello,\nworld!')#代码86
+
+
+# In[44]:
+
+
+path = 'C:\nowhere'#代码87：错误例子
+
+
+# In[45]:
+
+
+path#代码88：错误例子
+
+
+# In[46]:
+
+
+print(path)#代码88:错误例子-字符中的n被视为分段代码了
+
+
+# In[47]:
+
+
+print('C:\\nowhere')#代码89：正确方法-加一个\
+
+
+# In[48]:
+
+
+path = 'C:\\Program Files\\fnord\\foo\\bar\\baz\\frozz\\bozz'#代码90:长路径多用\
+
+
+# In[49]:
+
+
+print(r'C:\nowhere')#代码91:前缀r表示后面的都是raw string纯文本
+
+
+# In[50]:
+
+
+print(r'C:\Program Files\fnord\foo\bar\baz\frozz\bozz')#代码92:前缀r表示后面的都是raw string纯文本
+
+
+# In[51]:
+
+
+print(r'Let\'s go!')#代码93: 前缀r表示后面的都是raw string纯文本，停止识别字符功能
+
+
+# In[53]:
+
+
+print(r"This is illegal\")
+#代码94:错误示范-纯文本最后一个字符不能是\
+
+
+# In[54]:
+
+
+print(r'C:\Program Files\foo\bar' '\\')#代码95:最后一个字符是\的文本的解决办法
+
+
+# ## Unicode, bytes, and bytearray 特殊字符与表情
+
+# In[55]:
+
+
+"\u00C6"#代码96
+
+
+# In[56]:
+
+
+"\U0001F60A"#代码97
+
+
+# In[57]:
+
+
+"This is a cat: \N{Cat}"#代码98
+
+
+# #### *更多：https://unicode-table.com/en/*
+
+# ### *编码与解码*
+
+# In[59]:
+
+
+b'Hello, world!'#代码99:前缀b——produce a byte objects
+
+
+# In[60]:
+
+
+"Hello, world!".encode("ASCII")#代码100:不同的编码
+
+
+# In[61]:
+
+
+"Hello, world!".encode("UTF-8")#代码101:不同的编码
+
+
+# In[62]:
+
+
+"Hello, world!".encode("UTF-32")#代码102:不同的编码
+
+
+# In[63]:
+
+
+len("How long is this?".encode("UTF-8"))#代码103:不同的编码-长度
+
+
+# In[64]:
+
+
+len("How long is this?".encode("UTF-32"))#代码104:不同的编码-长度
+
+
+# In[65]:
+
+
+"Hællå, wørld!".encode("ASCII")#代码105:无编码的报错
+
+
+# In[66]:
+
+
+"Hællå, wørld!".encode("ASCII", "ignore")#代码106:省去无编码字符
+
+
+# In[67]:
+
+
+"Hællå, wørld!".encode("ASCII", "replace")#代码106:替换无编码字符
+
+
+# In[68]:
+
+
+"Hællå, wørld!".encode("ASCII", "backslashreplace")#代码106:用\替换无编码字符
+
+
+# In[69]:
+
+
+"Hællå, wørld!".encode("ASCII", "xmlcharrefreplace")#代码106:代号（？）替换无编码字符
+
+
+# In[70]:
+
+
+"Hællå, wørld!".encode()#代码107：编码
+
+
+# In[71]:
+
+
+b'H\xc3\xa6ll\xc3\xa5, w\xc3\xb8rld!'.decode()#代码108:解码
+
+
+# In[72]:
+
+
+bytes("Hællå, wørld!", encoding="utf-8")#代码109
+
+
+# In[73]:
+
+
+str(b'H\xc3\xa6ll\xc3\xa5, w\xc3\xb8rld!', encoding="utf-8")#代码110
+
+
+# In[74]:
+
+
+x = bytearray(b"Hello!")
+x[1] = ord(b"u")
+x#代码111
+
